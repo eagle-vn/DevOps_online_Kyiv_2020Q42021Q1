@@ -2,10 +2,10 @@
 ## TASK 1.1
 
 Installed and configured GIT on my workstation.
-![Screenshot_1](m1\task1.1\screenshots\1.jpg)
+![Screenshot_1](./screenshots/1.jpg)
 
 Cloned repo.
-![Screenshot_2](m1\task1.1\screenshots\2_clone.jpg)
+![Screenshot_2](./screenshots/2_clone.jpg)
 
 Then I followed by the instruction step by step.
 1. Created empty file readme.txt. Committed. **(git add .; git commit)**
@@ -22,17 +22,17 @@ Make sure that index.html from one branch doesn't conflict with another.
 We can delete "separators" manually. Then commits. Conflict was resolved.
 
 Used **(git log --oneline)** <br/>
-![Screenshot_3](m1\task1.1\screenshots\one_line.jpg)
+![Screenshot_3](./screenshots/one_line.jpg)
 
 For more detailed log we can use **(git log -p)** <br/>
 
-![Screenshot_4](m1\task1.1\screenshots\git_log-p.jpg)
+![Screenshot_4](./screenshots/git_log-p.jpg)
 
 Pushed all changes **(git push origin --all)**
 
 Save content from **(git reflog)** out of repo. <br/>
 **(git reflog > /c/Users/eaglevn/Desktop/my_epam_education_Win/task1.1_GIT.txt)**<br/>
-![Screenshot_5](m1\task1.1\screenshots\git_reflog_out.jpg)
+![Screenshot_5](./screenshots/git_reflog_out.jpg)
 
 Added task1.1_GIT.txt to my repo. Pushed it.
 
