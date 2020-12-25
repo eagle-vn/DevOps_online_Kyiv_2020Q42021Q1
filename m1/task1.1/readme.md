@@ -2,9 +2,13 @@
 ## TASK 1.1
 
 Installed and configured GIT on my workstation.
+
+
 ![Screenshot_1](./screenshots/1.jpg)
 
 Cloned repo.
+
+
 ![Screenshot_2](./screenshots/2_clone.jpg)
 
 Then I followed by the instruction step by step.
