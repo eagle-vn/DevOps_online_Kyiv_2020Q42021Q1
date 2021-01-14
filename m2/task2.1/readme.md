@@ -68,7 +68,7 @@ Choose: Generate New MAC Addresses For All Network Adapters value assigns a new 
 To further create a network between guest operating systems.</br>
 I decided to check the MAC address of virtual machines using the command  ```sudo dmesg | grep eth0```
 
-6. Created a group of two VMs. (see 2.1.1)
+6. Created a group of two VMs. (see 2.1.1)</br>
 ![Screenshot_1](./images/2.1.1.jpg)
 
 Groups allow us to simultaneously start and shut down Virtual Machines.
@@ -130,8 +130,8 @@ sudo apt-get install openssh-server
 systemctl status sshd - make sure ssh is available
 netstat -an | grep 22
 ```
-(see 2.1.4)
-![see 2.1.4](./images/2.1.4.jpg)
+(see 2.1.4)</br>
+![see 2.1.4](./images/2.1.4.jpg)</br>
 Open PuTTY. Select SSH, enter the port that we forwarded 2277
 Enter Host IP.
 (see 2.1.5 and 2.1.6)
