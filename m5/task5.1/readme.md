@@ -39,7 +39,7 @@ Let's do the same research for the usermod command</br>
     specified in the format YYYY-MM-DD.</br>
  -l, --login NEW_LOGIN
     The name of the user will be changed from LOGIN to NEW_LOGIN. Nothing
-    else is changed. In particular, the user's home directory or mail spool should probably be renamed manually to reflect the new login name.
+    else is changed. In particular, the user's home directory or mail spool should probably be renamed manually to reflect the new login name.</br>
     ```
     usermod -l zaza_02 zaza_01
     ```
@@ -59,7 +59,7 @@ Than created the .plan file in the user's home directory and wrote my plan there
 
 8. For this task, the -l parameter will suffice
 (see 5.1.1.10)</br>
-![5.1.1.10](./images/5.1.1.10.jpg)
+![5.1.1.10](./images/5.1.1.10.jpg)</br>
 As we can see  letter "d" indicates that the file is a directory.
 
 ### Part 2
