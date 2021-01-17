@@ -25,12 +25,12 @@ phone number, rating in computer games.
 
 5. By using `man passwd`, I found 2 interesting keys:</br>
 
- 1) -e "Immediately expire an account's password. This in effect can force a user
+  -e "Immediately expire an account's password. This in effect can force a user
 to change his/her password at the user's next login."</br>
-(see 5.1.1.4 and 5.1.1.5)
-![5.1.1.4](./images/5.1.1.4.jpg)
+(see 5.1.1.4 and 5.1.1.5)</br>
+![5.1.1.4](./images/5.1.1.4.jpg)</br>
 ![5.1.1.5](./images/5.1.1.5.jpg)
-2) -x Set the maximum number of days a password remains valid. After MAX_DAYS, the password is required to be changed.</br>
+ -x Set the maximum number of days a password remains valid. After MAX_DAYS, the password is required to be changed.</br>
 (see 5.1.1.6)</br>
 ![5.1.1.6](./images/5.1.1.6.jpg)</br>
 Let's do the same research for the usermod command</br>
