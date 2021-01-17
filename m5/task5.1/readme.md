@@ -9,7 +9,7 @@
 ![5.1.1.1](./images/5.1.1.1.jpg)</br>
 This changed the system file /etc/shadow.
 
-3. (see 5.1.1.2)
+3. (see 5.1.1.2)</br>
 ![5.1.1.2](./images/5.1.1.2.jpg)</br>
 As we can see from the screenshot, the system has pseudo-users. An important distinguishing feature is that they do not have an interpreter. And also their id > 1000.
 For example, deamon is used for system services. On my system its uid = 1
