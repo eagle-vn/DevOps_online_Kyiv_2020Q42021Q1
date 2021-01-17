@@ -29,15 +29,15 @@ phone number, rating in computer games.
 to change his/her password at the user's next login."</br>
 (see 5.1.1.4 and 5.1.1.5)</br>
 ![5.1.1.4](./images/5.1.1.4.jpg)</br>
-![5.1.1.5](./images/5.1.1.5.jpg)
+![5.1.1.5](./images/5.1.1.5.jpg)</br>
  -x Set the maximum number of days a password remains valid. After MAX_DAYS, the password is required to be changed.</br>
 (see 5.1.1.6)</br>
 ![5.1.1.6](./images/5.1.1.6.jpg)</br>
 Let's do the same research for the usermod command</br>
- 1) -e, --expiredate EXPIRE_DATE
+ -e, --expiredate EXPIRE_DATE
     The date on which the user account will be disabled. The date is
     specified in the format YYYY-MM-DD.</br>
- 2) -l, --login NEW_LOGIN
+ -l, --login NEW_LOGIN
     The name of the user will be changed from LOGIN to NEW_LOGIN. Nothing
     else is changed. In particular, the user's home directory or mail spool should probably be renamed manually to reflect the new login name.
     ```
@@ -58,7 +58,7 @@ Than created the .plan file in the user's home directory and wrote my plan there
 ![5.1.1.9](./images/5.1.1.9.jpg)
 
 8. For this task, the -l parameter will suffice
-(see 5.1.1.10)
+(see 5.1.1.10)</br>
 ![5.1.1.10](./images/5.1.1.10.jpg)
 As we can see  letter "d" indicates that the file is a directory.
 
