@@ -64,4 +64,60 @@ As we can see  letter "d" indicates that the file is a directory.
 
 ### Part 2
 
+1. The `tree` command is able to display the structure of all directories on the system, in the form of a tree.
+If we just enter the `tree` in home directory, we will see all the folders, subfolders and files in the form of a tree.
+The `tree` has a huge number of options.</br>
+First of all, the `-f` option which prefixes the path. Which can be useful for writing all sorts of scripts.
+Also, we can add the `-d` option, only folders will be displayed.
+We can also set a restriction on showing folders with more files than we want to see.</br>
+For example `tree -d --filelimit 22` will display us only directories with no more than 22 files.</br>
+By default, `tree` does not list hidden folders. To see them, we can use the `-a` option.</br>
+The `-D` option will print files with the date they were last modified.</br>
+The `-P` option allows us to search for files with the requested mask. In this case, the file name must be enclosed in quotation marks.</br>
+The `--prune` option will exclude from the output all folders that do not contain the file we are looking for.</br>
+For example `tree -P '*.py' --prune`
+will show us only those directories that have '*.py' files and `--prune` will exclude from the output all folders that have no files
+matching the output template. (see 5.1.1.11)</br>
+![5.1.1.11](./images/5.1.1.11.jpg)</br>
+
+The next command will print us all files named 'c' with all possible formats. `tree -P 'c.*' --prune` (see 5.1.1.12)</br>
+![5.1.1.12](./images/5.1.1.12.jpg)</br>
+
+To display all files containing 'c', I entered the next command:
+`tree -P '*c*.*' --prune` (see 5.1.1.13)</br>
+![5.1.1.13](./images/5.1.1.13.jpg)</br>
+
+To list all directories and subdirectories up to and including the second level, used the command:
+`tree -L 2` (see 5.1.1.14)</br>
+![5.1.1.14](./images/5.1.1.14.jpg)</br>
+
+2. The `file` can be used to determine the type of file.</br>
+For example, I went to the /bin and
+wrote the command `'file *` (see 5.1.1.15)</br>
+![5.1.1.15](./images/5.1.1.15.jpg)</br>
+Here we see symbolic links, scripts, binaries.
+
+3. An absolute link contains the full path from the root directory to a file, for example, to go from the home directory to etc by an absolute path we write: `cd /etc` and we find ourselves in the etc directory, wherever we were before.</br>
+Relative path is the path from the current directory. For example, the command that will allow us to get from the zaza directory to the zaza_01 directory will look like as follows: `cd ../zaza_01`
+If we want to run a file that is in the current directory, we can do this using a relative link. (see 5.1.1.16)</br>
+![5.1.1.16](./images/5.1.1.16.jpg)</br>
+The `cd` command with no arguments will take us to our home directory wherever we are.
+
+4. `ls` has a large number of possible parameters.
+For example: `ls -i` will display the index number of each file. (see 5.1.1.17)</br>
+![5.1.1.17](./images/5.1.1.17.jpg)</br>
+
+Multiple parameters can be combined if needed. (see 5.1.1.18)</br>
+![5.1.1.18](./images/5.1.1.18.jpg)</br>
+
+When we use `ls -a` we see all files, even hidden ones.</br>
+When we use `ls -l` we see all of our files as a list that contains additional information. Such as permissions, the owner of the file,
+weight, time of the last file modification.
+
+
+
+
+
+
+
 I will try to finish before the lecture 18/01/2021.
