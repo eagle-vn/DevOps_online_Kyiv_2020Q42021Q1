@@ -114,10 +114,101 @@ When we use `ls -a` we see all files, even hidden ones.</br>
 When we use `ls -l` we see all of our files as a list that contains additional information. Such as permissions, the owner of the file,
 weight, time of the last file modification.
 
+5. Created file using redirection. (see 5.1.1.19)
+
+![5.1.1.19](./images/5.1.1.19.jpg)</br>
 
 
+File was copied within absolute and relative addressing.(see 5.1.1.20)
 
+![5.1.1.20](./images/5.1.1.20.jpg)</br>
 
+Deleted subdirectory using following command `rm -r subdir2_5/`</br>
+Deleted file with following command `rm rsltls_rootdir`
 
+6. `mkdir test`</br>
+`cp ~/.bash_history ~/test/labwork2`</br>
+`ln labwork2 hardlink_labwork2`</br>
+`ln -s labwork2 symlink_labwork2`</br>
+To define type of link we can type `ls -i`
 
-I will try to finish before the lecture 18/01/2021.
+![5.1.1.21](./images/5.1.1.21.jpg)</br>
+By looking at the inodes number we can define what is what. Also, there many ways to define.</br>
+Hard link refers to the same inode. It means that the hard link refers to exact same spot on the hard drive. Hard links may have different names.</br>
+Symlink or soft link refers to the name of the file. If we delete this file, the symlink will refer to nowhere and will be useless.
+
+When I changed the data by opening symlic link, data was changed in the original file at the same time. It happened because symlink pointing to
+the name hard link.
+
+`mv hardlink_labwork2 hard_lnk_labwork2`</br>
+`mv symlink_labwork2 symb_lnk_labwork2`</br>
+`rm labwork2`</br>
+![5.1.1.22](./images/5.1.1.22.jpg)</br>
+
+Deleting labwork2 makes symlink useless. Because symlink referred to the name "labwork2" but now it doesn't exist.
+
+7. Using the locate utility, find all files that contain the squid and traceroute sequence.
+Before using `locate` we have to make `updatedb` with root pravalages.
+
+![5.1.1.23](./images/5.1.1.23.jpg)</br>
+
+8. The most useful commands for working with hard drives:
+
+- `mount` for a list of all mounted filesystems and mount options for each of them;
+- `lsblk` for a tree of block devices, size and mount point (if mounted);
+- `df` for a list of mounted block devices, size, used space, available space and mount point.
+
+To determine which partitions are mounted in the system I used
+`df`
+
+![5.1.1.24](./images/5.1.1.24.jpg)</br>
+/dev/sda1 - is mounted partition.
+
+9. To complete this task, we will use the output from the /etc/fstab file.
+To count the number of lines in this file, we can use the `wc` utility with the `-l` parametr.</br>
+![5.1.1.25](./images/5.1.1.25.jpg)</br>
+
+10. The find command does a good job of searching by filename. It has many additional parameters.
+We are interested in the `-name` criterion
+the command will look like this: `find /etc/ -name "*host*"`
+
+![5.1.1.26](./images/5.1.1.26.jpg)</br>
+
+11. We can that by using folowing command: `ls -lah /etc | grep ss`
+
+![5.1.1.27](./images/5.1.1.27.jpg)</br>
+
+12. To organize a screen-by-screen output of the /etc we have to use redirection.</br> `ls -lah /etc | less`
+
+13. The types of devices are as follows:
+- -c Character Device - These devices transfer data
+- -b Block Device - These devices transfer data, but in large fixed-sized blocks. Such as harddrives, filesystems
+- -p Pipe Device - Named pipes allow two or more processes to communicate with each other, these are
+similar to character devices, but instead of having output sent to a device, it's sent to another process.
+- -c Socket Device - Socket devices facilitate communication between processes, similar to pipe devices but they can communicate with many processes at once.
+
+To determine the type of device, we can use the command `ls -l /dev`
+
+![5.1.1.28](./images/5.1.1.28.jpg)</br>
+
+The first bit indicates the type of device(file).
+On the screen we can see pseudo device (/dev/null) which is Characret Device.
+Hard drives (/dev/sda1) which is block device.
+
+14. We can determine the type of file by using `ls -l`.
+The first bit indicates the type of file.</br>
+Linux has the following file types:
+- "-" - regular file;
+- d - directory;
+- b - block device;
+- c - character device;
+- l - symbolic link;
+- p - pipe (pipe, fifo);
+- s - socket.
+
+15) `ls -lth /etc | grep ^d | head -n 5`
+
+Note: `^d` points the beginning of a line. It's regular expression.</br>
+[About regular expression](https://losst.ru/regulyarnye-vyrazheniya-linux)
+
+![5.1.1.29](./images/5.1.1.29.jpg)</br>
