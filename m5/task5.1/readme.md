@@ -158,6 +158,10 @@ Before using `locate` we have to make `updatedb` with root pravalages.
 - `lsblk` for a tree of block devices, size and mount point (if mounted);
 - `df` for a list of mounted block devices, size, used space, available space and mount point.
 
+Useful Links:</br>
+[How to find the names of the devices](https://www.lifewire.com/how-to-use-linux-to-find-the-names-of-the-devices-on-your-computer-4078068)</br>
+[Theory. Best resource about devices I ever seen](https://linuxjourney.com/lesson/device-types)
+
 To determine which partitions are mounted in the system I used
 `df`
 
