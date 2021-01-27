@@ -120,6 +120,7 @@ and 666 for the file)
 Default value for umask is 022. It means that when we create the file its permissions will be 666 - 022 = 644 = rw-r--r-- and for the folders
 777 - 022 = 755 = rwxrr-xr-x.
 We can specify a different value for the umask. And it will affect to the new files and folders for current session.
+
 ![5.2.12](./images/5.2.12.jpg)</br>
 
 16. The sticky bit limits the ability to delete a file or folder. Most often used for folders. If the sticky bit is set on a folder,
