@@ -8,9 +8,9 @@ separated list of users belonging to this group.
 
 As I know there are three types of users in Linux: root, pseudo-users and regular users.
 ![5.2.1](./images/5.2.1.jpg)</br>
-demon - Used by system service processes
-bin - Gives ownership of executables command
-sshd - used by the secure shell server
+- demon - Used by system service processes
+- bin - Gives ownership of executables command
+- sshd - used by the secure shell server
 To define pseudo-urers we have to know that their id is less than 1000. They have no command interpreter. For secure reasons.
 
 2. Starts from 1000 but not more than 65535.
